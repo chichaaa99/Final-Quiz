@@ -53,7 +53,7 @@ namespace Final_Quiz
                 {
                     if (playAgain == System.Windows.Forms.DialogResult.Cancel)
                     {
-                        this.Close();
+                        this.Hide();
                         Form1 back = new Form1();
                         back.Show();
                     }
