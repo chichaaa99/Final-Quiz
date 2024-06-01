@@ -26,6 +26,10 @@ namespace Final_Quiz
             askQuestion(1);
 
             totalQuestions = 10;
+
+           
+
+
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -35,10 +39,11 @@ namespace Final_Quiz
 
         private void clickAnswerEvent(object sender, EventArgs e)
         {
+            
             var senderObject = (Button)sender;
             int buttonTag = Convert.ToInt32(senderObject.Tag);
 
-
+            
             if (buttonTag == correctAnswer)
             {
                 score++;
@@ -53,7 +58,7 @@ namespace Final_Quiz
                 {
                     if (playAgain == System.Windows.Forms.DialogResult.Cancel)
                     {
-                        this.Close();
+                        this.Hide();
                         Form1 back = new Form1();
                         back.Show();
                     }
@@ -217,6 +222,18 @@ namespace Final_Quiz
 
 
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 back = new Form3();
+            back.Show();
+        }
+
+        private void easylabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -19,12 +19,17 @@ namespace Final_Quiz
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Form1 back = new Form1();
             back.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void details_Load(object sender, EventArgs e)
         {
 
         }

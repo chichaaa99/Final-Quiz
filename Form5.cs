@@ -218,5 +218,13 @@ namespace Final_Quiz
 
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Form3 back = new Form3();
+            back.Show();
+        }
     }
 }

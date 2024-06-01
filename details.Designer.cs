@@ -42,17 +42,24 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(448, 397);
             this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Text = " \r\n\r\nTHIS GAME IS A SIMPLE QUIZ THAT MEASURE THE GENERAL INTELLIGENCE OF AN INDIV" +
+    "IDUAL.\r\n\r\n\r\nTHIS GAME WAS CREATED BY: FRANCEN MANALO AND MIGUEL DEL VALLE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(12, 523);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 37);
             this.button1.TabIndex = 1;
             this.button1.Text = "BACK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // details
@@ -67,6 +74,7 @@
             this.Name = "details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "details";
+            this.Load += new System.EventHandler(this.details_Load);
             this.ResumeLayout(false);
 
         }
